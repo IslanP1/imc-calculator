@@ -1,20 +1,30 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Titulo from './src/components/titulo';
+import Principal from './src/components/principal';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+        <Text style={styles.fonteBlue}>IMC 2</Text>
+        <Titulo/>
+        <Principal/>
+        <StatusBar style="auto" />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
+    paddingTop: 40,
+    paddingHorizonte: 15,
+    backgroundColor: '#05b0ab',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  fonteBlue: {
+    color: 'blue',
+    fontWeight: 'bold',
+    fontSize: 30,
   },
 });
